@@ -9,7 +9,7 @@ def _requires_from_file(filename):
 
 setuptools.setup(
     name="colorcluster",
-    version="1.2.0",
+    version="1.2.1",
     author="Yuki NAKAMURA",
     author_email="naka_yk@live.jp",
     description="Reduce color of the picture",
