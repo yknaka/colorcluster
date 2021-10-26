@@ -1,3 +1,4 @@
 
 *.jpg
 array.csv
+.DS_Store
