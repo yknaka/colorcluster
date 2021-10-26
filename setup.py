@@ -2,6 +2,11 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
   long_description = fh.read()
 
+
+def _requires_from_file(filename):
+  return open(filename).read().splitlines()
+
+
 setuptools.setup(
     name="colorcluster",
     version="1.2.0",
@@ -23,6 +28,7 @@ setuptools.setup(
     py_modules=['colorcluster'],
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
+    install_requires=_requires_from_file('requirements.txt'),
     entry_points={
         'console_scripts': [
             'colorcluster = colorcluster:main'
